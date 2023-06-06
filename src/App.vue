@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <Header  title="To Do App" />
-    <Tasks @delete-task="deleteTask" :tasks="tasks" />
+    <Tasks  @toggle-reminder="toggleReminder"
+    @delete-task="deleteTask" :tasks="tasks" />
   </div>
 </template>
 
@@ -26,6 +27,10 @@ export default {
        this.tasks = this.tasks.filter((task) => task.id !== id)
       }
     },
+    toggleReminder(id) {
+      this.task = this.task.map((task) => task.id === id ? { ...task, 
+        reminder: !task.reminder } : task)
+    }
   },
   created() {
     this.tasks = [
