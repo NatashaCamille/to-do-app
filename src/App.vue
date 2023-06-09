@@ -2,6 +2,7 @@
   <div class="container">
     <Header  title="To Do App" />
     <AddTask />
+    
     <Tasks  @toggle-reminder="toggleReminder"
     @delete-task="deleteTask" :tasks="tasks" />
   </div>
