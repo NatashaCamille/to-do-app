@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Take out the trash",
+      "day": "June 5th - 15:00",
+      "reminder": true
+    },
+    {
+      "id": "2",
+      "text": "Post update on Twitter",
+      "day": "June 6th - 21:00",
+      "reminder": true
+    },
+    {
+      "id": "3",
+      "text": "Dinner with mom",
+      "day": "June 6th - 12:00",
+      "reminder": false
+    },
+    {
+      "text": "test 1",
+      "day": "test1",
+      "reminder": true,
+      "id": "lRRTQlp"
+    }
+  ]
+}
